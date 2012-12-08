@@ -19,28 +19,29 @@ public class PrimeFactoryTest {
 
     @Test
     public void itShouldReturn2() throws Exception {
-        assertThat(primeFactory.computePrimeDivisors(2), is(new int[] { 2 }));
+        assertThat(primeFactory.computePrimeDivisors(2),
+                is(new Integer[] { 2 }));
     }
 
     @Test
     public void itShouldReturn3() throws Exception {
-        assertThat(primeFactory.computePrimeDivisors(3), is(new int[] { 3 }));
+        assertThat(primeFactory.computePrimeDivisors(3), is(new Integer[] { 3 }));
     }
 
     @Test
     public void itShouldReturn2and2() throws Exception {
-        assertThat(primeFactory.computePrimeDivisors(4), is(new int[] { 2, 2 }));
+        assertThat(primeFactory.computePrimeDivisors(4), is(new Integer[] { 2, 2 }));
     }
 
     @Test
     public void itShouldReturn2and2and2for8() throws Exception {
         assertThat(primeFactory.computePrimeDivisors(8),
-                is(new int[] { 2, 2, 2 }));
+                is(new Integer[] { 2, 2, 2 }));
     }
 
     @Test
     public void itShouldReturn5() throws Exception {
-        assertThat(primeFactory.computePrimeDivisors(5), is(new int[] { 5 }));
+        assertThat(primeFactory.computePrimeDivisors(5), is(new Integer[] { 5 }));
     }
 
     @Test
@@ -60,7 +61,7 @@ public class PrimeFactoryTest {
 
     @Test
     public void itShouldReturn256() throws Exception {
-        assertThat(primeFactory.computePrimeDivisors(256), is(new int[] { 2, 2,
+        assertThat(primeFactory.computePrimeDivisors(256), is(new Integer[] { 2, 2,
                 2, 2, 2, 2, 2, 2, }));
     }
 
