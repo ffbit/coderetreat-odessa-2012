@@ -3,11 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ffbit</groupId>
-    <artifactId>game-of-life</artifactId>
+    <artifactId>coderetreat-odessa-2012</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>game-of-life-1</name>
+    <name>Coderetreat Odessa 2012</name>
+    <description>My code from Coderetreat 2012 in Odessa, Ukraine</description>
     <url>http://maven.apache.org</url>
 
     <properties>
