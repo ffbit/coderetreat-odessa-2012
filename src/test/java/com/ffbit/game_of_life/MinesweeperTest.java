@@ -31,4 +31,30 @@ public class MinesweeperTest {
         assertThat(minesweeper.makeMap(source), is(expected));
     }
 
+    @Test
+    public void itShouldReturn3x3FieldWithAllMines() throws Exception {
+        char[][] source = { { '*', '*', '*' }, { '*', '*', '*' } };
+        char[][] expected = { { '*', '*', '*' }, { '*', '*', '*' } };
+
+        assertThat(minesweeper.makeMap(source), is(expected));
+    }
+
+    @Test
+    public void itShouldReturnFieldWithOneMine() throws Exception {
+        char[][] source = { { '*', '.' }, { '.', '.' } };
+        char[][] expected = { { '*', '1' }, { '1', '1' } };
+
+        assertThat(minesweeper.makeMap(source), is(expected));
+    }
+
+    @Test
+    public void itShouldTestExampleMap() throws Exception {
+        char[][] source = { { '*', '.', '.', '.' }, { '.', '.', '.', '.' },
+                { '.', '*', '.', '.' }, { '.', '.', '.', '.' } };
+        char[][] expected = { { '*', '1', '0', '0' }, { '2', '2', '1', '0' },
+                { '1', '*', '1', '0' }, { '1', '1', '1', '0' } };
+
+        assertThat(minesweeper.makeMap(source), is(expected));
+    }
+
 }
